@@ -55,21 +55,21 @@ const Contact = () => {
             <p style={{
               fontSize: "1.05rem", color: "rgba(241,240,238,0.6)", lineHeight: "1.7", marginBottom: "40px"
             }}>
-              Have a question about an order, a specific product, or just want to say hi? Fill out the form and our concierge team will get back to you within 24 hours.
+              Hai una domanda sul tuo ordine o desideri una consulenza di stile personalizzata? Il nostro concierge team a Milano ti risponderà entro 24 ore.
             </p>
 
             <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
               <div>
                 <p style={{ fontSize: "0.72rem", fontWeight: "700", letterSpacing: "0.1em", textTransform: "uppercase", color: "rgba(201,168,76,0.8)", marginBottom: "4px" }}>Email</p>
-                <a href="mailto:hello@luminathreads.com" style={{ fontSize: "1.1rem", fontWeight: "600", color: "#f1f0ee", textDecoration: "none" }}>hello@luminathreads.com</a>
+                <a href="mailto:concierge@luminamilano.it" style={{ fontSize: "1.1rem", fontWeight: "600", color: "#f1f0ee", textDecoration: "none" }}>concierge@luminamilano.it</a>
               </div>
               <div>
-                <p style={{ fontSize: "0.72rem", fontWeight: "700", letterSpacing: "0.1em", textTransform: "uppercase", color: "rgba(201,168,76,0.8)", marginBottom: "4px" }}>Phone</p>
-                <a href="tel:+213000000000" style={{ fontSize: "1.1rem", fontWeight: "600", color: "#f1f0ee", textDecoration: "none" }}>+213 000 00 00 00</a>
+                <p style={{ fontSize: "0.72rem", fontWeight: "700", letterSpacing: "0.1em", textTransform: "uppercase", color: "rgba(201,168,76,0.8)", marginBottom: "4px" }}>Telefono</p>
+                <a href="tel:+390289013456" style={{ fontSize: "1.1rem", fontWeight: "600", color: "#f1f0ee", textDecoration: "none" }}>+39 02 8901 3456</a>
               </div>
               <div>
-                <p style={{ fontSize: "0.72rem", fontWeight: "700", letterSpacing: "0.1em", textTransform: "uppercase", color: "rgba(201,168,76,0.8)", marginBottom: "4px" }}>Headquarters</p>
-                <p style={{ fontSize: "1.1rem", fontWeight: "600", color: "#f1f0ee", lineHeight: "1.5" }}>123 Didouche Mourad St<br/>Algiers, Algeria</p>
+                <p style={{ fontSize: "0.72rem", fontWeight: "700", letterSpacing: "0.1em", textTransform: "uppercase", color: "rgba(201,168,76,0.8)", marginBottom: "4px" }}>Sede Principale</p>
+                <p style={{ fontSize: "1.1rem", fontWeight: "600", color: "#f1f0ee", lineHeight: "1.5" }}>Via Montenapoleone, 8<br/>20121 Milano (MI), Italia</p>
               </div>
             </div>
           </motion.div>

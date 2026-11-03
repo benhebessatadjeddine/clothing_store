@@ -78,34 +78,34 @@ const OrderHistory = () => {
                             <td>{product.title}</td>
                             <td>{product.selectedSize}</td>
                             <td>{product.amount}</td>
-                            <td>{(product.price * product.amount).toFixed(2)} DA</td>
+                            <td>{(product.price * product.amount).toFixed(2)} €</td>
                           </tr>
                         ))}
                         <tr>
                           <td colSpan="5" className="text-center">
                             <h4 className="text-md text-accent-content">
-                              Subtotal: { Math.round(order?.subtotal) } DA
+                              Subtotale: { Math.round(order?.subtotal) } €
                             </h4>
                           </td>
                         </tr>
                         <tr>
                           <td colSpan="5" className="text-center">
                             <h3 className="text-md text-accent-content">
-                              Shipping: 500 DA
+                              Spedizione: 15 €
                             </h3>
                           </td>
                         </tr>
                         <tr>
                           <td colSpan="5" className="text-center">
                             <h3 className="text-md text-accent-content">
-                              Tax: 20%: { Math.round(order?.subtotal / 5) } DA
+                              IVA (22%): { Math.round(order?.subtotal * 0.22) } €
                             </h3>
                           </td>
                         </tr>
                         <tr>
                           <td colSpan="5" className="text-center">
                             <h3 className="text-xl text-accent-content">
-                              - Order Total: { Math.round(order?.subtotal + 500 + (order?.subtotal / 5)) } DA -
+                              - Totale Ordine: { Math.round(order?.subtotal + 15 + (order?.subtotal * 0.22)) } € -
                             </h3>
                           </td>
                         </tr>

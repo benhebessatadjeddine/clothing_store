@@ -44,10 +44,10 @@ const Footer = () => {
                 fontFamily: "'Space Grotesk',sans-serif", fontWeight: "900",
                 fontSize: "1.1rem", color: "#0a0a0f",
               }}>L</div>
-              <span style={{ fontFamily: "'Space Grotesk',sans-serif", fontSize: "1.4rem", fontWeight: "800", color: "#f1f0ee" }}>LUMINA</span>
+              <span style={{ fontFamily: "'Space Grotesk',sans-serif", fontSize: "1.4rem", fontWeight: "800", color: "#f1f0ee" }}>LUMINA MILANO</span>
             </div>
             <p style={{ fontSize: "0.88rem", color: "rgba(241,240,238,0.4)", lineHeight: "1.7", maxWidth: "280px", marginBottom: "24px" }}>
-              The ultimate destination for modern, luxurious fashion. Designed for elegance.
+              L'apice dell'alta moda e dello stile contemporaneo. Curato e disegnato nel cuore di Milano.
             </p>
             {/* Social icons */}
             <div style={{ display: "flex", gap: "12px" }}>
@@ -123,11 +123,11 @@ const Footer = () => {
           display: "flex", alignItems: "center", justifyContent: "space-between",
           flexWrap: "wrap", gap: "12px",
         }}>
-          <p style={{ fontSize: "0.82rem", color: "rgba(241,240,238,0.25)" }}>
-            © 2026 Lumina Threads — Redefining Fashion. All rights reserved.
+          <p style={{ fontSize: "0.82rem", color: "rgba(241,240,238,0.3)" }}>
+            © 2026 Lumina Milano S.r.l. — Via Montenapoleone 8, 20121 Milano (MI), Italia • P.IVA IT09876543210
           </p>
-          <p style={{ fontSize: "0.8rem", color: "rgba(241,240,238,0.2)" }}>
-            Crafted with passion for trendsetters
+          <p style={{ fontSize: "0.8rem", color: "rgba(241,240,238,0.25)" }}>
+            Fatto con passione a Milano • Made in Italy
           </p>
         </div>
       </div>

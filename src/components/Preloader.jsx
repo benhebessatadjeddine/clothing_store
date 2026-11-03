@@ -54,18 +54,18 @@ const Preloader = ({ onComplete }) => {
                 boxShadow: "0 0 40px rgba(201,168,76,0.5)",
               }}
             >
-              K
+              L
             </motion.div>
             <span
               style={{
                 fontFamily: "'Space Grotesk', sans-serif",
-                fontSize: "3rem",
+                fontSize: "2.6rem",
                 fontWeight: "800",
-                letterSpacing: "0.2em",
+                letterSpacing: "0.18em",
                 color: "#f1f0ee",
               }}
             >
-              LUMINA
+              LUMINA MILANO
             </span>
           </motion.div>
           

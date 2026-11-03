@@ -89,7 +89,7 @@ const Register = () => {
         >
           <div style={{ textAlign: "center", marginBottom: "32px" }}>
             <h2 style={{ fontFamily: "'Space Grotesk',sans-serif", fontSize: "1.8rem", fontWeight: "700", color: "#f1f0ee" }}>Create Account</h2>
-            <p style={{ color: "rgba(241,240,238,0.4)", fontSize: "0.9rem", marginTop: "6px" }}>Join the Lumina Threads community today.</p>
+            <p style={{ color: "rgba(241,240,238,0.4)", fontSize: "0.9rem", marginTop: "6px" }}>Join the Lumina Milano community today.</p>
           </div>
 
           <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "20px" }}>

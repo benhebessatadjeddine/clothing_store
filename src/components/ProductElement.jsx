@@ -161,7 +161,7 @@ const ProductElement = ({ id, title, image, rating, price, brandName }) => {
               background: "linear-gradient(135deg,#c9a84c,#e8c97a)",
               WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
             }}>
-              {price} DA
+              {price} €
             </span>
             <Link
               to={`/shop/product/${id}`}

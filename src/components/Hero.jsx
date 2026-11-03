@@ -56,14 +56,14 @@ const Hero = () => {
           className="hero-label"
           style={{ border: "1px solid rgba(201,168,76,0.3)", padding: "4px 16px", borderRadius: "99px", background: "rgba(201,168,76,0.05)", backdropFilter: "blur(4px)" }}
         >
-          ✨ New Collection 2026
+          ✨ Collezione Milano 2026
         </motion.div>
 
         <h1 className="hero-title" style={{ perspective: "1000px" }}>
-          <SplitText text="Dress to " delay={0.8} />
-          <SplitText text="Impress." delay={1.1} className="accent" />
+          <SplitText text="L'Eleganza " delay={0.8} />
+          <SplitText text="Senza Tempo." delay={1.1} className="accent" />
           <br />
-          <SplitText text="Live in Style." delay={1.5} />
+          <SplitText text="Made in Italy." delay={1.5} />
         </h1>
 
         <motion.p 
@@ -72,8 +72,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 2.2, ease: "easeOut" }}
           className="hero-subtitle"
         >
-          Curated collections from the world's top brands — Nike, Puma, New
-          Balance &amp; more. Premium quality, unbeatable style.
+          Curated luxury collections inspired by Italian haute couture and modern streetwear. Handcrafted excellence from Milan to the world.
         </motion.p>
 
         <motion.div 

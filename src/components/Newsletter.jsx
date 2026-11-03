@@ -44,7 +44,7 @@ const Newsletter = () => {
             Unlock Exclusive <span style={{ color: "#e8c97a" }}>Access.</span>
           </h2>
           <p style={{ fontSize: "1.1rem", color: "rgba(241,240,238,0.5)", marginBottom: "40px", lineHeight: "1.6" }}>
-            Join the Lumina Threads inner circle. Get early access to limited drops, exclusive sales, and curated style guides delivered straight to your inbox.
+            Unisciti al club esclusivo di Lumina Milano. Ricevi anteprime riservate sulle collezioni Made in Italy, inviti alle sfilate e capsule collection esclusive.
           </p>
 
           <form onSubmit={handleSubmit} className="newsletter-form" style={{ display: "flex", gap: "12px", flexWrap: "wrap", justifyContent: "center" }}>

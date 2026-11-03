@@ -269,7 +269,7 @@ const SingleProduct = () => {
                 background: "linear-gradient(135deg,#c9a84c,#e8c97a)",
                 WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent"
               }}>
-                {productData?.price?.current?.value} DA
+                {productData?.price?.current?.value} €
               </span>
               <SingleProductRating rating={rating} productData={productData} />
             </div>

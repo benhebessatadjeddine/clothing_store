@@ -54,8 +54,8 @@ const Header = () => {
     <>
       <div className="topbar">
         <ul>
-          <li><FaHeadphones /><span>+213 000 00 00 00</span></li>
-          <li><FaRegEnvelope /><span>hello@luminathreads.com</span></li>
+          <li><FaHeadphones /><span>+39 02 8901 3456</span></li>
+          <li><FaRegEnvelope /><span>concierge@luminamilano.it</span></li>
         </ul>
       </div>
 
@@ -72,8 +72,8 @@ const Header = () => {
         <div style={{ display:"flex", alignItems:"center", justifyContent:"space-between", maxWidth:"1280px", margin:"0 auto", padding:"0 24px", height:"64px" }}>
 
           <Link to="/" className="nav-logo" onClick={() => window.scrollTo(0,0)}>
-            <span className="nav-logo-badge">K</span>
-            Lumina Threads
+            <span className="nav-logo-badge">L</span>
+            Lumina Milano
           </Link>
 
           <div className="navlinks-container" style={{ display:"flex", alignItems:"center", gap:"4px" }}>
@@ -125,7 +125,7 @@ const Header = () => {
                   }}>
                   <p style={{ fontSize:"0.75rem", color:"rgba(241,240,238,0.5)", textTransform:"uppercase", letterSpacing:"0.08em", marginBottom:"12px" }}>Cart summary</p>
                   <p style={{ fontSize:"1.3rem", fontWeight:"700", color:"#f1f0ee", marginBottom:"4px" }}>{amount} {amount===1?"item":"items"}</p>
-                  <p style={{ fontSize:"0.95rem", color:"#e8c97a", marginBottom:"16px" }}>Subtotal: <strong>{total.toFixed(2)} DA</strong></p>
+                  <p style={{ fontSize:"0.95rem", color:"#e8c97a", marginBottom:"16px" }}>Subtotal: <strong>{total.toFixed(2)} €</strong></p>
                   <Link to="/cart" className="btn-primary-custom" style={{ width:"100%", display:"flex" }} onClick={() => setCartOpen(false)}>
                     View Cart
                   </Link>

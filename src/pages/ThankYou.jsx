@@ -75,7 +75,7 @@ const ThankYou = () => {
           Thank you again for your purchase!
         </h4>
         <h4 className="text-xl max-sm:text-lg">
-          Sincerely, The Lumina Threads team
+          Con affetto, Il Team Lumina Milano
         </h4>
       </div>
     </>

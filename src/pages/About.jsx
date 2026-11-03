@@ -22,21 +22,21 @@ const About = () => {
               fontFamily: "'Space Grotesk', sans-serif", fontSize: "clamp(2rem, 4vw, 3.5rem)",
               fontWeight: "800", color: "#f1f0ee", lineHeight: "1.1", marginBottom: "24px"
             }}>
-              Redefining <br/>
+              L'Arte della <br/>
               <span style={{
                 background: "linear-gradient(135deg,#c9a84c,#e8c97a)",
                 WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent"
-              }}>Modern Luxury.</span>
+              }}>Moda Italiana.</span>
             </h2>
             <p style={{
               fontSize: "1.05rem", color: "rgba(241,240,238,0.6)", lineHeight: "1.7", marginBottom: "20px"
             }}>
-              At Lumina Threads, we believe that style is a reflection of your ambition. We meticulously curate the finest clothing and footwear from world-renowned brands, ensuring every piece you wear makes a statement.
+              Born in the heart of Milan's Quadrilatero della Moda, Lumina Milano embodies the pinnacle of Italian sartorial craftsmanship and contemporary luxury. We meticulously curate exceptional clothing and footwear from world-renowned fashion houses.
             </p>
             <p style={{
               fontSize: "1.05rem", color: "rgba(241,240,238,0.6)", lineHeight: "1.7", marginBottom: "40px"
             }}>
-              From limited edition sneakers to timeless apparel, our collection is designed for those who demand excellence without compromise.
+              From handcrafted leather sneakers to bespoke Italian tailoring, our collections celebrate those who live with uncompromising passion and timeless elegance.
             </p>
             
             <Link to="/contact" className="btn-primary-custom" onClick={() => window.scrollTo(0,0)}>
@@ -70,8 +70,8 @@ const About = () => {
               }}>
                  <span style={{ fontSize: "5rem" }}>✨</span>
                  <div style={{ textAlign: "center" }}>
-                   <p style={{ fontSize: "0.8rem", fontWeight: "700", letterSpacing: "0.2em", textTransform: "uppercase", color: "#e8c97a" }}>Est. 2026</p>
-                   <p style={{ fontSize: "1.5rem", fontFamily: "'Space Grotesk', sans-serif", fontWeight: "800", color: "#f1f0ee", marginTop: "8px" }}>LUMINA</p>
+                   <p style={{ fontSize: "0.8rem", fontWeight: "700", letterSpacing: "0.2em", textTransform: "uppercase", color: "#e8c97a" }}>Milano • Est. 2026</p>
+                   <p style={{ fontSize: "1.5rem", fontFamily: "'Space Grotesk', sans-serif", fontWeight: "800", color: "#f1f0ee", marginTop: "8px" }}>LUMINA MILANO</p>
                  </div>
               </div>
             </div>

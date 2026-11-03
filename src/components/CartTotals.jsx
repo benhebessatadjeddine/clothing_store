@@ -19,8 +19,8 @@ const row = (label, value, highlight = false) => (
 
 const CartTotals = () => {
   const { total, amount } = useSelector((state) => state.cart);
-  const tax = total / 5;
-  const shipping = 50;
+  const tax = total * 0.22;
+  const shipping = total > 0 ? 15 : 0;
 
   return (
     <div style={{
@@ -35,15 +35,15 @@ const CartTotals = () => {
         fontSize: "0.72rem", fontWeight: "700", letterSpacing: "0.14em",
         textTransform: "uppercase", color: "rgba(201,168,76,0.7)", marginBottom: "16px",
       }}>
-        Order Summary
+        Riepilogo Ordine
       </h3>
 
-      {row(`Items (${amount})`, `${Math.round(total)} DA`)}
-      {row("Shipping", `${shipping} DA`)}
-      {row("Tax (20%)", `${Math.round(tax)} DA`)}
+      {row(`Articoli (${amount})`, `${Math.round(total)} €`)}
+      {row("Spedizione Espressa", `${shipping} €`)}
+      {row("IVA (22%)", `${Math.round(tax)} €`)}
 
       <div style={{ padding: "16px 0 0" }}>
-        {row("Total", `${Math.round(total + shipping + tax)} DA`, true)}
+        {row("Totale", `${Math.round(total + shipping + tax)} €`, true)}
       </div>
     </div>
   );

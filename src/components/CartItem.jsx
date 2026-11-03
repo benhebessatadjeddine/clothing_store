@@ -63,7 +63,7 @@ const CartItem = ({ cartItem }) => {
           WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text",
           marginBottom: "6px",
         }}>
-          {(price * amount).toFixed(2)} DA
+          {(price * amount).toFixed(2)} €
         </p>
         <button
           onClick={() => dispatch(removeItem(id))}

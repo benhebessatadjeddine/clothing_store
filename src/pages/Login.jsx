@@ -83,7 +83,7 @@ const Login = () => {
               L
             </div>
             <h2 style={{ fontFamily: "'Space Grotesk',sans-serif", fontSize: "1.8rem", fontWeight: "700", color: "#f1f0ee" }}>Welcome Back</h2>
-            <p style={{ color: "rgba(241,240,238,0.4)", fontSize: "0.9rem", marginTop: "6px" }}>Sign in to continue to Lumina Threads.</p>
+            <p style={{ color: "rgba(241,240,238,0.4)", fontSize: "0.9rem", marginTop: "6px" }}>Sign in to continue to Lumina Milano.</p>
           </div>
 
           <form onSubmit={proceedLogin} style={{ display: "flex", flexDirection: "column", gap: "20px" }}>

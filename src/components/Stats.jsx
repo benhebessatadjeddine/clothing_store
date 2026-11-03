@@ -17,9 +17,9 @@ const Counter = ({ from, to, duration = 2, suffix = "" }) => {
     let rounded = Math.round(current);
     
     // Add prefix if any
-    const prefix = to.toString().startsWith("DA") ? "DA " : "";
+    const prefix = to.toString().startsWith("€") ? "€" : "";
     // Add original suffix and passed suffix
-    const originalSuffix = to.toString().replace(/[0-9.DA]/g, "");
+    const originalSuffix = to.toString().replace(/[0-9.€]/g, "");
 
     return `${prefix}${rounded.toLocaleString()}${originalSuffix}${suffix}`;
   });
@@ -35,10 +35,10 @@ const Counter = ({ from, to, duration = 2, suffix = "" }) => {
 };
 
 const statItems = [
-  { value: "10", suffix: "+", label: "Years on the Market", icon: "🏆" },
-  { value: "12", suffix: "M DA", label: "Annual Revenue Growth", icon: "📈" },
-  { value: "2600", suffix: "+", label: "Global Partners", icon: "🌍" },
-  { value: "180", suffix: "K+", label: "Daily Visitors", icon: "👥" },
+  { value: "10", suffix: "+", label: "Years in High Fashion", icon: "🏆" },
+  { value: "12", suffix: "M €", label: "Annual Revenue Growth", icon: "📈" },
+  { value: "2600", suffix: "+", label: "International Boutiques", icon: "🌍" },
+  { value: "180", suffix: "K+", label: "Monthly Global Clients", icon: "👥" },
 ];
 
 const Stats = () => {

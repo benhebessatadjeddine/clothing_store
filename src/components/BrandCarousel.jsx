@@ -2,9 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const brands = [
-  "WALK LONDON", "Reebok", "Nike", "Jack & Jones", "Crocs", "Vans", "Puma", 
-  "New Balance", "Tommy Hilfiger", "Bershka", "AllSaints", "Columbia", 
-  "The North Face", "Calvin Klein", "Timberland"
+  "GUCCI", "PRADA", "GIORGIO ARMANI", "VERSACE", "BOTTEGA VENETA", 
+  "FENDI", "VALENTINO", "LORO PIANA", "ZEGNA", "STONE ISLAND", 
+  "DOLCE & GABBANA", "OFF-WHITE", "MONCLER", "MARNI"
 ];
 
 const BrandCarousel = () => {
