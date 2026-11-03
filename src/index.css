@@ -1,0 +1,280 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── FONTS ── */
+:root {
+  --font-main: 'Inter', sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
+
+  /* Brand palette */
+  --gold:        #06b6d4; /* Cyan 500 */
+  --gold-light:  #22d3ee; /* Cyan 400 */
+  --gold-dim:    #0891b2; /* Cyan 600 */
+  --surface-0:   #040a10;
+  --surface-1:   #0b131e;
+  --surface-2:   #121d2b;
+  --surface-3:   #1b293c;
+  --border:      rgba(255,255,255,0.07);
+  --border-gold: rgba(6,182,212,0.3);
+  --text-primary: #f8fafc;
+  --text-muted:   #94a3b8;
+  --accent:       #10b981; /* Emerald 500 */
+  --accent2:      #34d399; /* Emerald 400 */
+  --red:          #f43f5e;
+  --green:        #10b981;
+
+  /* Gradients */
+  --grad-gold:   linear-gradient(135deg, #06b6d4 0%, #22d3ee 50%, #06b6d4 100%);
+  --grad-purple: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+  --grad-dark:   linear-gradient(160deg, #040a10 0%, #0b131e 50%, #070e17 100%);
+  --grad-card:   linear-gradient(145deg, #121d2b 0%, #0b131e 100%);
+
+  --radius-sm:  8px;
+  --radius-md:  14px;
+  --radius-lg:  20px;
+  --radius-xl:  28px;
+
+  --shadow-card: 0 4px 24px rgba(0,0,0,0.5), 0 1px 2px rgba(0,0,0,0.8);
+  --shadow-glow: 0 0 30px rgba(16,185,129,0.25);
+  --shadow-gold: 0 0 20px rgba(6,182,212,0.2);
+}
+
+/* ── BASE ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-main);
+  background: var(--surface-0);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--surface-1); }
+::-webkit-scrollbar-thumb { background: var(--surface-3); border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: var(--gold-dim); }
+
+/* ── ANIMATED BACKGROUND ── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 20% 10%, rgba(16,185,129,0.06) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 80% 80%, rgba(52,211,153,0.05) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 40% at 50% 50%, rgba(6,182,212,0.03) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+#root { position: relative; z-index: 1; }
+
+/* ── KEYFRAMES ── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; } to { opacity: 1; }
+}
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-8px); }
+}
+@keyframes pulse-ring {
+  0%   { transform: scale(0.8); opacity: 1; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+@keyframes counter-up {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── UTILITY CLASSES ── */
+.animate-fade-up   { animation: fadeInUp 0.6s ease both; }
+.animate-fade-in   { animation: fadeIn 0.5s ease both; }
+.animate-float     { animation: float 4s ease-in-out infinite; }
+
+.glass {
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid var(--border);
+}
+
+.glass-gold {
+  background: rgba(201,168,76,0.06);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border-gold);
+}
+
+.text-gradient-gold {
+  background: var(--grad-gold);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 3s linear infinite;
+}
+
+.text-gradient-purple {
+  background: var(--grad-purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.btn-primary-custom {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 28px;
+  background: var(--grad-gold);
+  color: #0a0a0f;
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+  box-shadow: 0 4px 20px rgba(201,168,76,0.35);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn-primary-custom:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(201,168,76,0.5);
+  filter: brightness(1.1);
+}
+.btn-primary-custom:active { transform: translateY(0); }
+
+.btn-ghost-custom {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 24px;
+  background: transparent;
+  color: var(--text-primary);
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn-ghost-custom:hover {
+  border-color: var(--gold-dim);
+  color: var(--gold-light);
+  background: rgba(201,168,76,0.06);
+  transform: translateY(-1px);
+}
+
+.divider-gold {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-dim), transparent);
+  margin: 0;
+}
+
+/* DaisyUI overrides to match our palette */
+[data-theme="dark"] {
+  --tw-bg-opacity: 1;
+}
+
+/* ── DATEPICKER DARK THEME ── */
+.date-picker-custom {
+  width: 100% !important;
+  padding: 8px 12px !important;
+  background: rgba(10,10,15,0.8) !important;
+  border: 1px solid rgba(255,255,255,0.1) !important;
+  border-radius: 10px !important;
+  color: #f1f0ee !important;
+  font-size: 0.85rem !important;
+  outline: none !important;
+  cursor: pointer !important;
+  font-family: 'Inter', sans-serif !important;
+}
+.react-datepicker {
+  background: #1a1a26 !important;
+  border: 1px solid rgba(255,255,255,0.1) !important;
+  border-radius: 14px !important;
+  font-family: 'Inter', sans-serif !important;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.7) !important;
+}
+.react-datepicker__header {
+  background: #111118 !important;
+  border-bottom: 1px solid rgba(255,255,255,0.06) !important;
+  border-radius: 14px 14px 0 0 !important;
+}
+.react-datepicker__current-month,
+.react-datepicker__day-name,
+.react-datepicker-time__header {
+  color: rgba(241,240,238,0.7) !important;
+}
+.react-datepicker__day {
+  color: rgba(241,240,238,0.8) !important;
+  border-radius: 8px !important;
+  transition: background 0.15s !important;
+}
+.react-datepicker__day:hover { background: rgba(201,168,76,0.15) !important; color: #e8c97a !important; }
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+  background: linear-gradient(135deg,#c9a84c,#e8c97a) !important;
+  color: #0a0a0f !important;
+}
+.react-datepicker__day--outside-month { color: rgba(241,240,238,0.2) !important; }
+.react-datepicker__navigation-icon::before { border-color: rgba(241,240,238,0.5) !important; }
+
+/* ── RANGE SLIDER THUMB ── */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  background: linear-gradient(135deg,#c9a84c,#e8c97a);
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(201,168,76,0.4);
+  border: 2px solid rgba(10,10,15,0.8);
+  margin-top: -7px;
+}
+input[type="range"]::-moz-range-thumb {
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  background: linear-gradient(135deg,#c9a84c,#e8c97a);
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(201,168,76,0.4);
+  border: 2px solid rgba(10,10,15,0.8);
+}
+
+/* ── TOAST OVERRIDES ── */
+.Toastify__toast {
+  background: #1a1a26 !important;
+  border: 1px solid rgba(255,255,255,0.08) !important;
+  color: #f1f0ee !important;
+  border-radius: 12px !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 0.88rem !important;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5) !important;
+}
+.Toastify__progress-bar { background: linear-gradient(90deg,#c9a84c,#e8c97a) !important; }
+.Toastify__toast-icon svg { fill: #e8c97a !important; }

@@ -1,0 +1,104 @@
+.stats-section {
+  padding: 80px 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.stats-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 60% at 50% 50%, rgba(201,168,76,0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.stats-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.stats-label {
+  text-align: center;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(201,168,76,0.65);
+  margin-bottom: 48px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.stat-card {
+  background: linear-gradient(145deg,rgba(26,26,38,0.8) 0%,rgba(17,17,24,0.6) 100%);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 20px;
+  padding: 36px 28px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(24px);
+  transition: all 0.6s cubic-bezier(0.4,0,0.2,1);
+}
+
+.stat-card--visible {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeInUp 0.6s ease both;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(201,168,76,0.3), transparent);
+}
+
+.stat-card:hover {
+  border-color: rgba(201,168,76,0.2);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(201,168,76,0.1);
+  transform: translateY(-4px);
+}
+
+.stat-icon {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.stat-value {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg,#c9a84c 0%,#e8c97a 50%,#c9a84c 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 3s linear infinite;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: rgba(241,240,238,0.45);
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+}
+
+@media(max-width: 900px) {
+  .stats-grid { grid-template-columns: repeat(2,1fr); }
+}
+@media(max-width: 500px) {
+  .stats-grid { grid-template-columns: 1fr; }
+  .stat-value { font-size: 2.2rem; }
+}

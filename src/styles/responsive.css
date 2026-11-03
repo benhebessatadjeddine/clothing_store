@@ -1,0 +1,232 @@
+/* =========================================================
+   GLOBAL RESPONSIVE OVERRIDES
+   Breakpoints: 1100px | 900px | 768px | 550px | 420px
+   ========================================================= */
+
+/* ── Base resets ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ── Lookbook ── */
+.lookbook-text {
+  padding: 0 12px;
+}
+
+@media (max-width: 900px) {
+  /* Lookbook items stack vertically on mobile */
+  .lookbook-item-row {
+    flex-direction: column !important;
+    gap: 32px !important;
+    margin-bottom: 64px !important;
+  }
+  .lookbook-item-row > div:first-child {
+    height: 340px !important;
+    flex: unset !important;
+    width: 100% !important;
+  }
+  .lookbook-text {
+    flex: unset !important;
+    width: 100% !important;
+  }
+}
+
+/* ── Footer ── */
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 32px !important;
+  }
+}
+@media (max-width: 550px) {
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ── Header topbar ── */
+@media (max-width: 550px) {
+  .topbar ul {
+    flex-direction: column;
+    gap: 4px;
+  }
+  .topbar ul li {
+    font-size: 0.72rem;
+  }
+}
+
+/* ── Nav logo ── */
+@media (max-width: 400px) {
+  .nav-logo {
+    font-size: 1.2rem !important;
+  }
+  .nav-logo-badge {
+    width: 30px !important;
+    height: 30px !important;
+  }
+}
+
+/* ── Section Title breadcrumb ── */
+.section-title-wrap {
+  padding: 28px 16px !important;
+}
+
+/* ── Single Product page ── */
+@media (max-width: 900px) {
+  .single-product-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+  .single-product-grid > div:first-child {
+    position: static !important;
+  }
+}
+
+/* ── Shop page ── */
+@media (max-width: 1024px) {
+  .shop-layout {
+    grid-template-columns: 260px 1fr !important;
+  }
+}
+@media (max-width: 800px) {
+  .shop-layout {
+    grid-template-columns: 1fr !important;
+  }
+  .shop-sidebar {
+    position: static !important;
+    margin-bottom: 28px;
+  }
+}
+
+/* ── Products grid ── */
+@media (max-width: 1100px) {
+  .selected-products-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 750px) {
+  .selected-products-grid { grid-template-columns: repeat(2, 1fr); }
+  .products-grid { grid-template-columns: repeat(2, 1fr) !important; }
+}
+@media (max-width: 480px) {
+  .selected-products-grid { grid-template-columns: 1fr; }
+  .products-grid { grid-template-columns: 1fr !important; }
+}
+
+/* ── Stats grid ── */
+@media (max-width: 900px) {
+  .stats-grid { grid-template-columns: repeat(2, 1fr) !important; }
+}
+@media (max-width: 500px) {
+  .stats-grid { grid-template-columns: 1fr !important; }
+  .stat-value { font-size: 2.2rem !important; }
+}
+
+/* ── About page ── */
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+}
+
+/* ── Contact page ── */
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+}
+
+/* ── Newsletter ── */
+@media (max-width: 600px) {
+  .newsletter-card {
+    padding: 48px 20px !important;
+    border-radius: 20px !important;
+  }
+  .newsletter-form {
+    flex-direction: column !important;
+  }
+  .newsletter-form input,
+  .newsletter-form button {
+    width: 100% !important;
+    flex: unset !important;
+  }
+}
+
+/* ── Lookbook section ── */
+@media (max-width: 768px) {
+  .lookbook-section {
+    padding: 60px 16px !important;
+  }
+  .lookbook-header {
+    margin-bottom: 60px !important;
+  }
+}
+
+/* ── Order History ── */
+@media (max-width: 768px) {
+  .order-table-wrap {
+    overflow-x: auto;
+  }
+  .order-table-wrap table {
+    min-width: 600px;
+  }
+}
+
+/* ── Hero ── */
+@media (max-width: 600px) {
+  .hero {
+    min-height: 70vh;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .hero-content-wrap {
+    padding: 0 16px !important;
+  }
+}
+
+/* ── Cart / Wishlist layout ── */
+@media (max-width: 768px) {
+  .cart-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ── User Profile ── */
+@media (max-width: 700px) {
+  .profile-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+}
+
+/* ── Marquee ── */
+@media (max-width: 550px) {
+  .marquee-text {
+    font-size: 3rem !important;
+  }
+}
+
+/* ── Global section padding reduction on mobile ── */
+@media (max-width: 600px) {
+  .selected-products {
+    padding: 48px 16px !important;
+  }
+  .section-heading {
+    margin-bottom: 36px !important;
+  }
+  .stats-section {
+    padding: 48px 16px !important;
+  }
+}
+
+/* ── Prevent horizontal overflow ── */
+body {
+  overflow-x: hidden;
+}
