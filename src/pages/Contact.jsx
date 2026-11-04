@@ -65,7 +65,7 @@ const Contact = () => {
               </div>
               <div>
                 <p style={{ fontSize: "0.72rem", fontWeight: "700", letterSpacing: "0.1em", textTransform: "uppercase", color: "rgba(201,168,76,0.8)", marginBottom: "4px" }}>Telefono</p>
-                <a href="tel:+390289013456" style={{ fontSize: "1.1rem", fontWeight: "600", color: "#f1f0ee", textDecoration: "none" }}>+39 02 8901 3456</a>
+                <a href="tel:+393444861409" style={{ fontSize: "1.1rem", fontWeight: "600", color: "#f1f0ee", textDecoration: "none" }}>+39 344 486 1409</a>
               </div>
               <div>
                 <p style={{ fontSize: "0.72rem", fontWeight: "700", letterSpacing: "0.1em", textTransform: "uppercase", color: "rgba(201,168,76,0.8)", marginBottom: "4px" }}>Sede Principale</p>

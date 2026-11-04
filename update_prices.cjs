@@ -15,7 +15,7 @@ db.products.forEach((p, idx) => {
 });
 
 if (db.user && db.user.length > 0) {
-  db.user[0].phone = "+39 02 8901 3456";
+  db.user[0].phone = "+39 344 486 1409";
   db.user[0].adress = "Via Montenapoleone 8, 20121 Milano (MI), Italia";
 }
 

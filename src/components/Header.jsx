@@ -54,7 +54,7 @@ const Header = () => {
     <>
       <div className="topbar">
         <ul>
-          <li><FaHeadphones /><span>+39 02 8901 3456</span></li>
+          <li><FaHeadphones /><span>+39 344 486 1409</span></li>
           <li><FaRegEnvelope /><span>concierge@luminamilano.it</span></li>
         </ul>
       </div>

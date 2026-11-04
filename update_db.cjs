@@ -41,7 +41,7 @@ if (db.user && db.user.length > 0) {
     db.user[0].email = "marco.rossi@luminamilano.it";
     db.user[0].name = "Marco";
     db.user[0].lastname = "Rossi";
-    db.user[0].phone = "+39 02 8901 3456";
+    db.user[0].phone = "+39 344 486 1409";
     db.user[0].adress = "Via Montenapoleone 8, 20121 Milano (MI), Italia";
     db.user[0].password = "password123";
 }
